@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Asleep.wav-637c72b174e3914d0f6f4397cf3e7d0b.sample"
+
+[deps]
+
+source_file="res://Assets/music/game/Asleep.wav"
+dest_files=[ "res://.import/Asleep.wav-637c72b174e3914d0f6f4397cf3e7d0b.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

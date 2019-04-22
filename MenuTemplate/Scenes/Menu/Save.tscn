@@ -1,0 +1,39 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Scripts/Menu/Save.gd" type="Script" id=1]
+
+[node name="Save" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+
+[node name="lbl_Name" type="Label" parent="."]
+anchor_right = 1.0
+anchor_bottom = 0.1
+text = "Save Game
+
+"
+align = 1
+valign = 1
+
+[node name="btn_Save1" type="Button" parent="."]
+margin_left = 50.0
+margin_top = 100.0
+margin_right = 200.0
+margin_bottom = 120.0
+text = "Slot1"
+
+[node name="btn_Save2" type="Button" parent="."]
+margin_left = 50.0
+margin_top = 200.0
+margin_right = 200.0
+margin_bottom = 220.0
+text = "Slot2"
+
+[node name="btn_Back" type="Button" parent="."]
+margin_left = 50.0
+margin_top = 300.0
+margin_right = 200.0
+margin_bottom = 320.0
+text = "Back"
+

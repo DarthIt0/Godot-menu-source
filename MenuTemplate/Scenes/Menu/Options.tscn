@@ -1,0 +1,211 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Scripts/Menu/Options.gd" type="Script" id=1]
+[ext_resource path="res://Assets/images/controls/xbox one/XboxOne_A.png" type="Texture" id=2]
+[ext_resource path="res://Assets/images/controls/xbox one/XboxOne_Menu.png" type="Texture" id=3]
+
+[node name="Options" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+
+[node name="lbl_Name" type="Label" parent="."]
+anchor_right = 1.0
+anchor_bottom = 0.1
+text = "Options"
+align = 1
+valign = 1
+
+[node name="btn_Video" type="Button" parent="."]
+margin_left = 50.0
+margin_top = 100.0
+margin_right = 200.0
+margin_bottom = 120.0
+text = "Video"
+
+[node name="btn_Audio" type="Button" parent="."]
+margin_left = 300.0
+margin_top = 100.0
+margin_right = 450.0
+margin_bottom = 120.0
+text = "Audio"
+
+[node name="btn_Controls" type="Button" parent="."]
+margin_left = 550.0
+margin_top = 100.0
+margin_right = 700.0
+margin_bottom = 120.0
+text = "Controls"
+
+[node name="btn_Back" type="Button" parent="."]
+margin_left = 800.0
+margin_top = 100.0
+margin_right = 950.0
+margin_bottom = 120.0
+text = "Back"
+
+[node name="cntrl_Video" type="Control" parent="."]
+visible = false
+anchor_top = 0.25
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="btn_Resolution" type="OptionButton" parent="cntrl_Video"]
+margin_left = 50.0
+margin_top = 50.0
+margin_right = 200.0
+margin_bottom = 70.0
+
+[node name="btn_Fullscreen" type="OptionButton" parent="cntrl_Video"]
+margin_left = 50.0
+margin_top = 100.0
+margin_right = 200.0
+margin_bottom = 120.0
+
+[node name="cntrl_Audio" type="Control" parent="."]
+visible = false
+anchor_top = 0.25
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="btn_Master_Mute" type="Button" parent="cntrl_Audio"]
+margin_left = 50.0
+margin_top = 50.0
+margin_right = 200.0
+margin_bottom = 70.0
+text = "Master Vol"
+
+[node name="sldr_Master" type="HSlider" parent="cntrl_Audio"]
+margin_left = 300.0
+margin_top = 50.0
+margin_right = 450.0
+margin_bottom = 70.0
+max_value = 2000.0
+
+[node name="btn_Music_Mute" type="Button" parent="cntrl_Audio"]
+margin_left = 50.0
+margin_top = 100.0
+margin_right = 200.0
+margin_bottom = 120.0
+text = "Music Vol"
+
+[node name="sldr_Music" type="HSlider" parent="cntrl_Audio"]
+margin_left = 300.0
+margin_top = 100.0
+margin_right = 450.0
+margin_bottom = 120.0
+max_value = 2000.0
+
+[node name="btn_Effects_Mute" type="Button" parent="cntrl_Audio"]
+margin_left = 50.0
+margin_top = 150.0
+margin_right = 200.0
+margin_bottom = 170.0
+text = "Effects Vol"
+
+[node name="sldr_Effects" type="HSlider" parent="cntrl_Audio"]
+margin_left = 300.0
+margin_top = 150.0
+margin_right = 450.0
+margin_bottom = 170.0
+max_value = 2000.0
+
+[node name="cntrl_Controls" type="Control" parent="."]
+visible = false
+anchor_top = 0.25
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="btn_Keyboard" type="Button" parent="cntrl_Controls"]
+margin_left = 300.0
+margin_top = 10.0
+margin_right = 450.0
+margin_bottom = 30.0
+text = "Keyboard"
+
+[node name="btn_Controller" type="Button" parent="cntrl_Controls"]
+margin_left = 550.0
+margin_top = 10.0
+margin_right = 700.0
+margin_bottom = 30.0
+text = "Controller"
+
+[node name="Key" type="Control" parent="cntrl_Controls"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="lbl_Name" type="Label" parent="cntrl_Controls/Key"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 87.0
+text = "Press any key"
+align = 1
+valign = 1
+
+[node name="Keyboard" type="Control" parent="cntrl_Controls"]
+visible = false
+anchor_top = 0.1
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="btn_Use" type="Button" parent="cntrl_Controls/Keyboard"]
+margin_left = 50.0
+margin_top = 55.0
+margin_right = 200.0
+margin_bottom = 75.0
+text = "Use"
+
+[node name="lbl_Use" type="Label" parent="cntrl_Controls/Keyboard"]
+margin_left = 300.0
+margin_top = 55.0
+margin_right = 450.0
+margin_bottom = 75.0
+align = 1
+valign = 1
+
+[node name="btn_Pause" type="Button" parent="cntrl_Controls/Keyboard"]
+margin_left = 50.0
+margin_top = 105.0
+margin_right = 200.0
+margin_bottom = 125.0
+text = "Pause"
+
+[node name="lbl_Pause" type="Label" parent="cntrl_Controls/Keyboard"]
+margin_left = 300.0
+margin_top = 105.0
+margin_right = 450.0
+margin_bottom = 125.0
+align = 1
+valign = 1
+
+[node name="Controller" type="Control" parent="cntrl_Controls"]
+visible = false
+anchor_top = 0.1
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="btn_Use" type="Button" parent="cntrl_Controls/Controller"]
+margin_left = 50.0
+margin_top = 55.0
+margin_right = 200.0
+margin_bottom = 75.0
+text = "Use"
+
+[node name="spr_Use" type="Sprite" parent="cntrl_Controls/Controller"]
+position = Vector2( 625, 65 )
+scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 2 )
+
+[node name="btn_Pause" type="Button" parent="cntrl_Controls/Controller"]
+margin_left = 50.0
+margin_top = 105.0
+margin_right = 200.0
+margin_bottom = 125.0
+text = "Pause"
+
+[node name="spr_Pause" type="Sprite" parent="cntrl_Controls/Controller"]
+position = Vector2( 625, 115 )
+scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 3 )
+

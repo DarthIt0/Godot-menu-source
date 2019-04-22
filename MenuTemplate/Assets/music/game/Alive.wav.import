@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Alive.wav-908a096919ae738baa513edf541e885c.sample"
+
+[deps]
+
+source_file="res://Assets/music/game/Alive.wav"
+dest_files=[ "res://.import/Alive.wav-908a096919ae738baa513edf541e885c.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0
